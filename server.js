@@ -50,4 +50,4 @@ app.get("/pt/sobre", getAboutMePagePortuguese);
 app.get("/fotosemberlim", getBerlinPageEnglish);
 app.get("/pt/fotosemberlim", getBerlinPagePortuguese);
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
