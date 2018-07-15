@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Yantramanav";
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#pictures-carousel {
+    position: relative;
+    height: 600px;
+    max-width: 1100px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0s;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.picture.onscreen {
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+
+.picture.exit {
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#dots {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    text-align: center;
+    width: 100%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 1px white solid;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: white;
+}
+
+.center-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #202020;
+    text-decoration: none;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    color: #484848;
+    text-decoration: none;
+}
+
+.text-footer {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    padding-top: 80px;
+    color: #202020;
+}
+
+.text-footer-about {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #202020;
+}
+
+.menu-itens {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+.actual-page {
+    color: #bd986b !important;
+}
+
+.idioma {
+    margin-right: 3px !important;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 40px 0px;
+}
+
+.menu-itens:hover {
+    color: #484848;
+}
+
+#pictures-bottom-first {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pictures-bottom-first > div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.picture-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#pictures-bottom-first > div:not(:first-child) > .picture-bottom {
+    padding-left: 10px;
+}
+
+#pictures-bottom-first > div:not(:last-child) > .picture-bottom {
+    padding-right: 10px;
+}
+
+.picture-bottom:hover {
+    cursor: pointer;
+}
+
+.social-medias img {
+    width: 18px;
+    margin-left: 7px;
+}
+
+.social-medias-about img {
+    width: 18px;
+    margin-left: 7px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.social-medias-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: px;
+}
+
+.instagram {
+    opacity: 0.4;
+}
+
+.facebook {
+    opacity: 0.4;
+}
+
+.facebook:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.white-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.white-background-inlet {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.close {
+    top: 0px;
+    right: 0px;
+    font-size: 50px;
+    width: 50px;
+    padding-left: 95%;
+    padding-top: 1%;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.aboutFernanda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fernanda {
+    width: 450px;
+}
+
+.text-aboutFernanda {
+    font-size: 12px;
+    padding-top: 20px;
+}
