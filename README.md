@@ -8,4 +8,4 @@ The page is available in two languages: English and Portuguese.
 ![alt text](https://github.com/elisaafs/fernanda-reis-photography/blob/master/public/FR2.jpg "Fernanda Reis")
 ![alt text](https://github.com/elisaafs/fernanda-reis-photography/blob/master/public/FR3.jpg "Fernanda Reis")
 ![alt text](https://github.com/elisaafs/fernanda-reis-photography/blob/master/public/FR4.jpg "Fernanda Reis")
-![alt text](https://github.com/elisaafs/fernanda-reis-photography/blob/master/public/FR5jpg "Fernanda Reis")
+![alt text](https://github.com/elisaafs/fernanda-reis-photography/blob/master/public/FR5.jpg "Fernanda Reis")
