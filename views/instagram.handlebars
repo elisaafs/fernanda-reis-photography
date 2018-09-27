@@ -27,6 +27,24 @@
     <a class="menu-itens idioma" href="/pt">PT</a>
 </div>
 
+<div class="instagram-wrapper">
+    <a href="https://www.instagram.com/fernandareisphotography/" target="_blank"><img class="insta" src="/insta.png" alt=""></img></a>
+
+    <div class="insta-infos">
+        <a class="insta-text" href="https://www.instagram.com/fernandareisphotography/" target="_blank"><div class="insta-address">@fernandareisphotography</div></a>
+
+        <div class="insta-description">Lifestyle Photographer documenting life and its beautiful moments 🍃 Berlin based</div>
+    </div>
+</div>
+
+<div class="ig-list">
+    {{#each images as |image|}}
+    <a class="ig-preview" href={{image.link}} target="_blank">
+        <div style="background-image:url({{image.img}})"></div>
+    </a>
+    {{/each}}
+</div>
+
 <div class="footer">
     <div class="text-footer">{{translate "FOOTER_TEXT" language}}</div>
     <div class="social-medias">
@@ -34,7 +52,3 @@
         <a href="https://www.instagram.com/fernandareisphotography/" target="_blank"><i class="fab fa-instagram instagram"></i></a>
     </div>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="/script.js" type="text/javascript" charset="utf-8"></script>
-<script src="/script2.js" type="text/javascript" charset="utf-8"></script>

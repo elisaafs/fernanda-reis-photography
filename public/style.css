@@ -22,6 +22,27 @@ body {
     margin-bottom: 20px;
 }
 
+.descriptionTitle {
+    font-style: italic;
+    font-size: 14px;
+    color: #bd986b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.descriptionWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
 .picture {
     position: absolute;
     top: 0;
@@ -333,15 +354,12 @@ body {
     align-items: center;
 }
 
-.fernanda {
-}
-
 .text-aboutFernanda {
     font-size: 14px;
     padding-top: 20px;
     text-align: center;
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .picture-pages,
@@ -362,8 +380,6 @@ body {
 }
 .picture-pages-vertical {
     max-height: 600px;
-}
-.wrapper-fotos-shoot {
 }
 
 .picture-pages-shoot {
@@ -458,4 +474,53 @@ body {
 
 .wrapper-shooting {
     padding: 3px 6px;
+}
+
+.ig-preview {
+    background-position: center center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.ig-preview > div {
+    height: 100%;
+}
+
+.ig-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.insta {
+    height: 80px;
+    object-fit: cover;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.insta-description {
+    color: #999;
+    font-size: 13px;
+}
+
+.insta-text {
+    color: #202020;
+    text-decoration: none;
+    font-size: 15px;
 }
