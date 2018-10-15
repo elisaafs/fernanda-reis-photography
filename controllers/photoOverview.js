@@ -66,6 +66,8 @@ exports.renderOverviewPage = (req, res) => {
     res.render("photoOverview", {
         layout: "main",
         language: req.params.language,
+        isEnglish: req.params.language === "en",
+        isPortuguese: req.params.language === "pt",
         photos,
         name,
         category: req.params.category,

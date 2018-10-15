@@ -253,6 +253,8 @@ exports.renderPhotoSetPage = (req, res) => {
     res.render("photoSet", {
         layout: "main",
         language: req.params.language,
+        isEnglish: req.params.language === "en",
+        isPortuguese: req.params.language === "pt",
         photos
     });
 };
@@ -260,20 +262,26 @@ exports.renderPhotoSetPage = (req, res) => {
 exports.getContactPage = (req, res) => {
     res.render("contact", {
         layout: "main",
-        language: req.params.language
+        language: req.params.language,
+        isEnglish: req.params.language === "en",
+        isPortuguese: req.params.language === "pt"
     });
 };
 
 exports.getFirstPage = (req, res) => {
     res.render("firstPage", {
         layout: "main",
-        language: req.params.language
+        language: req.params.language,
+        isEnglish: req.params.language === "en",
+        isPortuguese: req.params.language === "pt"
     });
 };
 
 exports.getAboutMePage = (req, res) => {
     res.render("aboutMe", {
         layout: "main",
-        language: req.params.language
+        language: req.params.language,
+        isEnglish: req.params.language === "en",
+        isPortuguese: req.params.language === "pt"
     });
 };

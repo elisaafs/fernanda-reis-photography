@@ -22,6 +22,8 @@ exports.getInstagramView = (req, res) => {
         res.render("instagram", {
             layout: "main",
             language: req.params.language,
+            isEnglish: req.params.language === "en",
+            isPortuguese: req.params.language === "pt",
             images: data
         });
     });
