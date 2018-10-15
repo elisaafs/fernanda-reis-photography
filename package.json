@@ -5,7 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-app:prod": "NODE_ENV=production forever start -o stdout.txt -e stderr.txt --spinSleepTime 2000ms --minUptime 1000ms server.js",
+    "stop-app:prod": "forever stop server.js || true",
+    "restart-app:prod": "npm run stop-app:prod && npm run start-app:prod",
+    "redeploy:prod": "npm run update-from-git:prod && npm run restart-app:prod",
+    "update-from-git:prod": "git fetch && git reset --hard origin/master && npm install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,8 @@
   },
   "homepage": "https://gitlab.com/elisaafs/fernanda-photography#README",
   "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
     "instagram-node": "^0.5.8"
   }
 }
